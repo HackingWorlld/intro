@@ -1,2 +1,2 @@
-# khalidjan.ru
+
 Professor Khalidjan!
