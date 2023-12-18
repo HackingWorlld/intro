@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Khalidjan">
+<meta property="og:image" content="my14foto.jpg">
+<meta name="twitter:image" content="my14foto.jpg">
+<meta property="og:url" content="www.khalidjan.ru">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Khalidjan ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Khalidjan</title>
+</head>
+
+<body>
+   
+     <audio autoplay>
+  <source src="avd.mp3" type="audio/mpeg">
+  Ваш браузер не поддерживает воспроизведение аудио.
+</audio>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">KHALID</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="intro.html" class="active">Home</a></li>
+                <li><a href="khalidjan.p2p.html" > P2P</a></li>
+                
+                <li><a href="intro.proect.html">Project</a></li>
+                <li><a href="khalidjan.html">About the author</a></li>
+                <li><a href="intro.contact.html">Contact</a></li>
+                
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Hello, It's Me</h3>
+                <h1>I am <span style="color:#f9532d;">Khalid</span></h1>
+                <p>I am a professional backend developer. Our main goal is to provide backend 
+                    development solutions that meet the needs of both local and global clients.
+                </p>
+                <div class="img-sec">
+                <div class="images">
+                    <img src="my14foto.jpg" alt="" class="img-w">
+                </div>
+            </div>
+                <div class="social">
+                    <a href="https://instagram.com/khalidjan.7?igshid=NjIwNzIyMDk2Mg=="><i class='bx bxl-instagram'></i></a>
+                    <a href="https://t.me/kadamov_hack"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100046013282908&mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://wa.me/79690000413"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://vk.com/kadamov_04">
+  <i class='fab fa-vk'></i>
+</a>
+   
+                </div>
+            </div>
+        </div>
+          
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    
+</body>
+
+</html>

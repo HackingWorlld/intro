@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Khalidjan</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">KHALID</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="intro.html" >Home</a></li>
+                 <li><a href="khalidjan.p2p.html" >P2P</a></li>
+                <li><a href="intro.proect.html">Project</a></li>
+                <li><a href="khalidjan.html">About the author</a></li>
+                <li><a href="intro.contact.html" class="active">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Communication </h3>
+                <h1> <span style="color:#f9532d;">Method</span></h1>
+                <p>IFeel free to choose the method that suits you best for getting in touch with me.
+                </p>
+                 
+                <div class="img-sec">
+                <div class="images">
+                    
+                    <img src="my13foto.jpg" alt="" class="img-w">
+                     <h4><span style="color:#f9532d;">__________________________________________</span></h4>         
+            
+                </div>
+            </div>
+             
+			
+            </div>
+                <div class="social">
+                    <a href="https://instagram.com/khalidjan.7?igshid=NjIwNzIyMDk2Mg=="><i class='bx bxl-instagram'></i></a>
+                    <a href="https://t.me/kadamov_hack"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100046013282908&mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://vk.com/kadamov_04">
+  <i class='fab fa-vk'></i>
+</a>
+                    <a href="https://wa.me/79690000413"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

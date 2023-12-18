@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>khalidjanP2P</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">P2P</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="vvedeniya.khalid.html" >1.Введение в P2P-обмен криптовалютой</a></li>
+                <li><a href="registrasiya.khalid.html" class="active">2.Регистрация и верефикация</a></li>
+                <li><a href="platforma.khalid.html">3.Выбор надёжной платформы</a></li>
+                <li><a href="ponyatie.khalid.html">4.Основные понятия и термины</a></li>
+                <li><a href="order.khalid.html">5.Создание и управление ордерами</a></li>
+                <li><a href="#">6.Методы оплаты и безопасность</a></li>
+                <li><a href="#">7.Поиск и выполнения сделок</a></li>
+                <li><a href="#">8.Безопасность и мошенничества</a></li>
+                <li><a href="#">9.Налоговые и юридические аспекты</a></li>
+                <li><a href="#">10.Руководства и советы</a></li>
+                <li><a href="intro.html" class="active">Home</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>2. Регистрация и верефикация</h3>
+                
+                <div class="img-sec">
+                <div class="images">
+                    <img src="reg.jpg" alt="" class="img-w">
+                    
+                    <h4><span style="color:#f9532d;">1. Как зарегистрироваться на P2P-платформе:</span></h4>
+                </div>
+                    <p>
+                        - Для регистрации на P2P-платформе, посетите ее веб-сайт и найдите раздел "Регистрация" или "Создать аккаунт".
+- Заполните необходимую информацию, включая ваше имя, адрес электронной почты и пароль.
+- Внимательно прочитайте и примите условия пользования платформы.
+- Подтвердите вашу регистрацию, следуя инструкциям, которые будут
+ отправлены на указанный адрес электронной почты.
+                    </p>
+                    <div class="img-sec">
+                        <div class="images">
+                            <img src="pr.jpg" alt="" class="img-w">
+                            
+                     <h4><span style="color:#f9532d;">2. Процесс верификации аккаунта и его важность:
+</span></h4>
+</div>
+                    <p>
+                        - На некоторых P2P-платформах может потребоваться верификация вашей личности для повышения
+                         уровня безопасности. Это может включать в себя предоставление паспортных данных, фотографий и другой информации.
+- Верифицированный аккаунт часто имеет более высокий лимит для сделок и может быть доверен другим пользователям.
+- Важно верифицировать аккаунт, чтобы избежать ограничений и обеспечить доверие со стороны других участников P2P-сделок.
+                    </p>  
+                    <h4><span style="color:#f9532d;">__________________________________________</span></h4>         
+            
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

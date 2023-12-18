@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Khalidjan</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">KHALID</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="intro.html" >Home</a></li>
+                 <li><a href="khalidjan.p2p.html">P2P</a></li>
+                <li><a href="intro.proect.html">Project</a></li>
+                <li><a href="khalidjan.html" class= "active">About the author</a></li>
+                <li><a href="intro.contact.html">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+           
+            <h1>Kadamov<span style="color:#f9532d;"> Khalid</span></h1>
+            <div class="img-sec">
+            <div class="images">
+                <img src="my4foto.jpg" alt="" class="img-w">
+                <ul>
+                    
+                <li><a class="active">Success the out come of effort, risk and patience!</a></li>
+                    </ul>
+            </div>
+            <p>My name is Khalid, and I'm a backend developer with nearly two years of experience.</p>
+            <p>I'm constantly learning and evolving in this field, exploring new technologies and tackling interesting challenges.</p>
+            <p>My goal is to create efficient and reliable web applications, ensuring seamless backend operations.</p>
+            <p>In my free time, I also study and work on personal projects to further expand my skills and experience.</p>
+            <p>I have a passion for solving complex problems and optimizing backend systems.</p>
+<p>My programming skills include languages like Python, Java, and PHP, as well as expertise in database management.
+<p>I enjoy collaborating with cross-functional teams to deliver robust and scalable solutions.
+<p>Keeping up with industry trends, I stay informed about the latest developments in backend technologies.
+<p>I believe in the importance of clean and maintainable code to ensure long-term project success.</p>
+
+<h4><span style="color:#f9532d;">___________________________________________</span></h4>         
+            
+            <div class="social">
+                <a href="https://instagram.com/khalidjan.7?igshid=NjIwNzIyMDk2Mg=="><i class='bx bxl-instagram'></i></a>
+                <a href="https://t.me/kadamov_hack"><i class='bx bxl-telegram'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100046013282908&mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://wa.me/79690000413"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://vk.com/kadamov_04">
+  <i class='fab fa-vk'></i>
+</a>
+            </div>
+        </div>
+       
+        </div>
+    </div>
+</section>
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            

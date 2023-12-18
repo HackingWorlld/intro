@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>khalidjanP2P</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">P2P</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="vvedeniya.khalid.html" class="active">1.Введение в P2P-обмен криптовалютой</a></li>
+                <li><a href="registrasiya.khalid.html">2.Регистрация и верефикация</a></li>
+                <li><a href="platforma.khalid.html">3.Выбор надёжной платформы</a></li>
+                <li><a href="ponyatie.khalid.html">4.Основные понятия и термины</a></li>
+                <li><a href="order.khalid.html">5.Создание и управление ордерами</a></li>
+                <li><a href="#">6.Методы оплаты и безопасность</a></li>
+                <li><a href="#">7.Поиск и выполнения сделок</a></li>
+                <li><a href="#">8.Безопасность и мошенничества</a></li>
+                <li><a href="#">9.Налоговые и юридические аспекты</a></li>
+                <li><a href="#">10.Руководства и советы</a></li>
+                <li><a href="intro.html" class="active">Home</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>1. Введение в P2P- криптовалютой</h3>
+                
+               
+                <div class="img-sec">
+                <div class="images">
+                    <img src="vvedeniya.jpg" alt="" class="img-w">
+                    
+                    <h4><span style="color:#f9532d;">1.Объяснение концепции P2P - обмена</span></h4>
+                </div>
+                    <p>
+                        P2P-обмен криптовалютой (Peer-to-Peer) - это способ торговли криптовалютой, при
+                         котором пользователи обмениваются активами напрямую друг с другом, без посредничества 
+                         централизованной биржи. В этом процессе покупатели и продавцы могут встречаться онлайн 
+                         на специализированных платформах и сами устанавливать условия сделок.
+                         Это предоставляет большую гибкость и контроль
+                         пользователям.
+                    </p>
+                     <div class="img-sec">
+                <div class="images">
+                    <img src="e.jpg" alt="" class="img-w">
+                     <h4><span style="color:#f9532d;">2.Зачем он нужен и как он отличается от централизованных бирж:
+             </span></h4>
+                 </div>
+                    <h4>
+                    </h4>
+                    <p>
+                        P2P-обмен криптовалютой полезен по нескольким причинам. Во-первых, он позволяет 
+                        пользователям обменивать криптовалюту напрямую, без необходимости 
+                        передачи средств на биржу. Это уменьшает риски, связанные с хранением средств на бирже.
+                    </p>
+                    
+                    
+                    <p>Кроме того, P2P-обмены обычно предоставляют разнообразные методы оплаты, что делает 
+                    их доступными для большего числа людей. Этот метод также способствует анонимности, так 
+                    как он не требует обширной верификации, как на централизованных биржа.</p>
+                    
+                    
+
+<p>Важное отличие от централизованных бирж заключается в том, что на P2P-платформах 
+нет посредников. Пользователи сами устанавливают цены и условия сделок, что делает 
+процесс более децентрализованным и свободным от контроля биржи.</p>
+                    
+           <h4><span style="color:#f9532d;">__________________________________________</span></h4>         
+            
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

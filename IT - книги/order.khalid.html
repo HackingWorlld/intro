@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>khalidjanP2P</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">P2P</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="vvedeniya.khalid.html" >1.Введение в P2P-обмен криптовалютой</a></li>
+                <li><a href="registrasiya.khalid.html">2.Регистрация и верефикация</a></li>
+                <li><a href="platforma.khalid.html" >3.Выбор надёжной платформы</a></li>
+                <li><a href="ponyatie.khalid.html">4.Основные понятия и термины</a></li>
+                <li><a href="order.khalid.html" class="active">5.Создание и управление ордерами</a></li>
+                <li><a href="#">6.Методы оплаты и безопасность</a></li>
+                <li><a href="#">7.Поиск и выполнения сделок</a></li>
+                <li><a href="#">8.Безопасность и мошенничества</a></li>
+                <li><a href="#">9.Налоговые и юридические аспекты</a></li>
+                <li><a href="#">10.Руководства и советы</a></li>
+                <li><a href="intro.html" class="active">Home</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>5. Создание и управление ордерами :</h3>
+                
+                <div class="img-sec">
+                <div class="images">
+                    <img src="5.jpg" alt="" class="img-w">
+                    
+                    <h4><span style="color:#f9532d;">1. Создание ордера:
+                    </span></h4>
+                </div>
+                    <p>
+                        -Участник A желает выполнить какую-либо задачу или обменять ресурсы с участником B. Он 
+                        создает ордер, который определяет 
+                        условия этой сделки, такие как количество ресурсов, цена или условия выполнения задачи.
+                    <div class="img-sec">
+                        <div class="images">
+                            <img src="05.jpg" alt="" class="img-w">
+                            
+                     <h4><span style="color:#f9532d;">2. Публикация ордера и Ответ на ордер:
+                 </span></h4>
+             </div>
+                    <p>
+                        Участник A публикует свой ордер в сети P2P, 
+                        чтобы другие участники могли видеть его и реагировать на него.
+                    </p> 
+                    
+                    <p>
+Участник B, который заинтересован в предложении от участника A, может откликнуться на ордер,
+                     подтверждая свою готовность выполнить сделку по указанным условиям.
+                    </p>
+                    
+                
+                 <div class="img-sec">
+                    <div class="images">
+                        <img src="04.jpg" alt="" class="img-w">
+                        
+                 <h4><span style="color:#f9532d;">3. Исполнение сделки, Отзывы и рейтинги:
+             </span></h4> 
+              </div>
+             <p>
+                -Когда оба участника согласны на условия ордера, 
+                сделка считается исполненной, и ресурсы передаются между ними или выполняется задача.
+             </p>  
+             <p>В некоторых системах P2P могут использоваться отзывы и рейтинги, чтобы оценивать 
+             надежность и надежность участников, 
+             что помогает другим принимать решения о сделках.</p>
+              <div class="img-sec">
+                    <div class="images">
+                        <img src="1.jpg" alt="" class="img-w">
+            
+             <h4><span style="color:#f9532d;">Это основные шаги в создании и управлении ордерами в 
+                контексте P2P, где ордер представляет собой предложение 
+                или запрос на обмен ресурсами или услугами между участниками децентрализованной сети.
+         </span></h4> 
+          </div>
+        <h4><span style="color:#f9532d;">__________________________________________</span></h4>         
+            
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

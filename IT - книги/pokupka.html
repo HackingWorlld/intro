@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Покупка курса</title>
+</head>
+<body>
+    <h1>Выберите тип курса и укажите свое имя и номер WhatsApp</h1>
+    <form action="zapros.php" method="post">
+        <label for="course-type">Тип курса:</label>
+        <select id="course-type" name="course-type">
+            <option value="Онлайн">Онлайн</option>
+            <option value="Оффлайн">Оффлайн</option>
+        </select><br><br>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="whatsapp">Номер WhatsApp:</label>
+        <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+        <label for="user-email">Email:</label>
+<input type="email" id="user-email" name="user-email" required><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+    <p>В ближайшее время с вами свяжется менеджер от Khalidjan. Спасибо, что выбрали нас!</p>
+</body>
+</html>
